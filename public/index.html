@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>NateTheMarketingGuy</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    
+    <style media="screen">
+
+      .container{
+        padding-top: 5px;
+        padding-left: 10px;
+      }
+      #blog{
+        text-align: center;
+        background-color: cornflowerblue;
+        padding: 50px;
+      }
+      #thoughts{
+        background-color: lightgreen;
+       /* text-align: center;*/
+        padding-top: 55px;
+        height: 900px;
+      }
+      h1 {
+        font-size: 40px;
+        color: white;
+      }
+      .deleter {
+        margin-left: 20px;
+        color: red;
+        cursor: pointer;
+        text-align: right;
+      }
+      input {
+        width: 400px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        background-color: antiquewhite;
+      }
+      textarea {
+        width: 1000px;
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        background-color: antiquewhite;
+
+      }
+      .dataTitle {
+        cursor: pointer;
+        font-size: 24px;
+      }
+      #results {
+        width: 1000px;
+        height: 400px;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: antiquewhite;
+        padding-top: 5px;
+      }
+      #actionbutton {
+        display: inline-block;
+      }
+      #buttons {
+        margin: 20px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+      <ul class="nav nav-tabs">
+        <li role="presentation"><a href="#blog">Blog</a></li>
+        <li role="presentation"><a href="#thoughts">Notes</a></li>
+      </ul>
+  </div>
+  
+  </nav>
+
+
+  <section id="blog">
+    <h1>Marketing Insights by Nate</h1>
+    <div id="userinput">
+        <p>Title
+        <input type="text" id="title" />
+      
+        Date
+        <input type="text" id="date" />
+        </p>
+        <br>
+        <p>Note</p>
+        <textarea id="note"></textarea>
+      <div id="buttons">
+        <div id="actionbutton">
+          <button id="makenew">Submit</button>
+        </div>
+        <button id="clearall">Delete All Notes</button>
+      </div>
+    </div>
+  </section>
+
+   
+     <!--  <a href="/notes">See your notes!</a>
+      <a href="/user">See your profile!</a>
+      <a href="/populateduser">See your profile, populated with notes!</a> -->
+   
+
+  
+  <section id="thoughts">
+      <div id="results"></div>
+  </section>
+    
+  
+    <script src="app.js"></script>
+  </body>
+</html>
